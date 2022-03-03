@@ -8,37 +8,61 @@
 </head>
 <body>
 
-<div class="myheader">
-<h2 >You are invited to my baptism, Eve </h2>
-<p> I saved the best seat in the house for you <3 </p>
-<p> ~ Nelle </p>
-<img src="nelle2.png" alt="villanelle" height="50%">
+<div class="container">
+  <h2 >You are invited to my baptism, Eve </h2>
+  <p> I saved the best seat in the house for you <3 </p>
+  <p> I hope you haven't forgotten about us </p>
+  <p> ~ Nelle </p>
+  <img src="nelle2.png" alt="villanelle" >
+  
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+
+  </div>
+  
 </div>
 
 
-<!-- <header>
-  <h2>Cities</h2>
-</header>
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
 
-<section>
-  <nav>
-    <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>London</h1>
-    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-  </article>
-</section>
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
 
-<footer>
-  <p>Footer</p>
-</footer> -->
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+<!--
+  make a carasel with the images, 'see I've changed'
+  'look i have a gift for u', click to open a pop up modal
+-->
 
 </body>
 </html>
