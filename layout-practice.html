@@ -15,9 +15,9 @@
 <div id="city-section">
   <div id="city-list">
     <ul>
-      <li>London</li>
-      <li>Paris</li>
-      <li>Tokyo</li>
+      <li onclick="displayInfo(this.id)" id='london'><a href="#">London</a></li>
+      <li onclick="displayInfo(this.id)" id='paris'><a href="#">Paris</a></li>
+      <li onclick="displayInfo(this.id)" id='tokyo'><a href="#">Tokyo</a></li>
     </ul>
   </div>
   
@@ -25,7 +25,7 @@
     <h2>
       London
     </h2>
-    <p>
+    <p id="city-info-paragraph">
       blah 
         blah 
           blah 
@@ -36,6 +36,25 @@
 <div class="footer">
   footer
 </div>
+
+<script>
+  const paragraph = document.getElementById("city-info-paragraph");
+  
+  const displayInfo = (id) => {
+    console.log(id);
+    switch (id) {
+      case 'tokyo':
+        paragraph.innerHTML = 'tokyo';
+        break;
+      case 'london':
+        paragraph.innerHTML = 'london';
+        break;
+      case 'paris':
+        paragraph.innerHTML = 'paris';
+        break;
+    }
+  }
+</script>
 
 </body>
 </html>

@@ -2,6 +2,10 @@ body {
   font-family: Helvetica;
 }
 
+li {
+  list-style-type: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
