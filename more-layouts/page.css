@@ -1,0 +1,27 @@
+#container {
+  border-style: solid;
+  border-color: coral;
+  background-color: yellow;
+  height: 100%;
+}
+
+.box {
+  height: 300px;
+  border-style: solid;
+  border-color: red;
+  margin: 10px;
+  background-color: grey;
+} 
+
+.innerBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.smallBox {
+  margin: 10px;
+  border-style: solid;
+  border-color: coral;
+  height: 250px;
+  flex-basis: 50%;
+}
