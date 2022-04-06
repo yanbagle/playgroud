@@ -1,6 +1,15 @@
-function MixedColor() {
+import './colors.css';
+
+function MixedColor(props) {
+  
+  const {color} = props;
+  
   return (
-    <div >
+    <div 
+      className='mixed-color'
+      style={{backgroundColor: color}}
+    >
+    {color}
     </div>
   );
 }
